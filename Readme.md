@@ -74,10 +74,10 @@ Add the following entry to your crontab.
 
 To do so, type `crontab -e` and hit enter. 
 
-Add the following line:
+Add the following line (substitute the path `/home/christoph/quick-and-simple-backup` with your actual absolute path to `backup.sh`).
 
 ```
-49 * * * * export DISPLAY=:0.0 && /absolute-path-to/backup-solution/backup.sh
+49 * * * * export DISPLAY=:0.0 && /home/christoph/quick-and-simple-backup/backup.sh
 ```
 
 This setting will perform your backup once an hour at minute 49. 
